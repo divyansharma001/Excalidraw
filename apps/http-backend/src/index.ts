@@ -3,6 +3,9 @@ import express from 'express';
 
 import { Request, Response } from 'express';
 
+import jwt from 'jsonwebtoken';
+import { JWT_SECRET } from './config';
+
 const app = express();
 
 app.get('/', (req: Request, res: Response) => {
@@ -13,7 +16,14 @@ app.post('/signup', (req,res)=>{
     
 })
 
-app.post('/login', (req,res)=>{
+app.post('/signin', (req,res)=>{
+const userId = 1;
+
+const token = jwt.sign({
+    userId
+}, JWT_SECRET)
+
+res.json({token})
 
 })
 

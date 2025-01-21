@@ -9,4 +9,16 @@ app.get('/', (req: Request, res: Response) => {
     res.json({ message: 'Hello World!' });
 });
 
+app.post('/signup', (req,res)=>{
+    
+})
+
+app.post('/login', (req,res)=>{
+
+})
+
+app.post('/room', (req,res)=>{
+    
+})
+
 app.listen(3001);

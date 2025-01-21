@@ -8,7 +8,6 @@
     "dev": "npm run build && npm run start"
   },
   "dependencies": {
-    "@repo/typescript-config": "workspace:*",
     "ws": "^8.18.0"
   },
   "keywords": [],
@@ -17,6 +16,7 @@
   "type": "commonjs",
   "description": "",
   "devDependencies": {
-    "@types/ws": "^8.5.13"
+    "@types/ws": "^8.5.13",
+    "@repo/typescript-config": "workspace:*"
   }
 }

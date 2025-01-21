@@ -9,4 +9,4 @@ app.get('/', (req: Request, res: Response) => {
     res.json({ message: 'Hello World!' });
 });
 
-app.listen(3000);
+app.listen(3001);
